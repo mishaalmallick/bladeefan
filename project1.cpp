@@ -475,7 +475,7 @@ class Map {
                 if(map[i][j].path == '.'){
                     cout << map[i][j].path;
                 }
-                if(0 < j < max_col && 0 < i < max_row){
+                if(0 < j && j < max_col && 0 < i && i < max_row){
                     if(map[i][j].path == 'N' || map[i][j].path == 'S'){
                         if(map[i][j - 1].path == 'E' || map[i][j - 1].path == 'W' ||
                         map[i][j + 1].path == 'E' || map[i][j + 1].path == 'W'){
